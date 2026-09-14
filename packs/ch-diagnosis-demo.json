@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "ch-diagnosis-demo",
+  "country": "CH",
+  "locales": ["de-CH"],
+  "status": "design_only",
+  "clinical_use": false,
+  "coding": {
+    "task": "diagnosis",
+    "care_setting": "coding-demonstration",
+    "system": "ICD-10-GM",
+    "edition": "2024",
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "applicability": "operator_verification_required"
+  },
+  "catalog": {
+    "publisher": "BfArM; Swiss applicability to be verified against BFS guidance",
+    "source_url": "https://www.mct.bfs.admin.ch/en/home",
+    "terms_url": "https://www.bfarm.de/SharedDocs/Downloads/DE/Kodiersysteme/downloadbedingungen-2024.pdf?__blob=publicationFile",
+    "review_status": "operator_review_required",
+    "redistribute": false
+  },
+  "boundary": {
+    "synthetic_only": true,
+    "identity_location": "hospital_local",
+    "failure_mode": "block",
+    "cloud_egress": "not_authorized"
+  }
+}

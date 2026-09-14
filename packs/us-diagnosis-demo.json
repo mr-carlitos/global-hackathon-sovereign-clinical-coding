@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "us-diagnosis-demo",
+  "country": "US",
+  "locales": ["en-US"],
+  "status": "design_only",
+  "clinical_use": false,
+  "coding": {
+    "task": "diagnosis",
+    "care_setting": "outpatient",
+    "system": "ICD-10-CM",
+    "edition": "FY2026-April",
+    "effective_from": "2026-04-01",
+    "effective_to": "2026-09-30",
+    "applicability": "operator_verification_required"
+  },
+  "catalog": {
+    "publisher": "CDC/NCHS and CMS",
+    "source_url": "https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/ICD10CM/2026-update/",
+    "terms_url": "https://www.cdc.gov/other/agencymaterials.html",
+    "review_status": "operator_review_required",
+    "redistribute": false
+  },
+  "boundary": {
+    "synthetic_only": true,
+    "identity_location": "hospital_local",
+    "failure_mode": "block",
+    "cloud_egress": "not_authorized"
+  }
+}
