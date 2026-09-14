@@ -69,6 +69,7 @@ No Azure credentials or catalog downloads are needed.
 | [Catalog policy](docs/catalogs.md) | Diagnosis scope, attribution and import gates |
 | [Privacy](docs/privacy.md) | Honest claims, threat model, audit limits |
 | [Agent workflow](docs/agent-workflow.md) | Skills, MCP, CI outputs, scoped autonomy |
+| [Feature specifications](specs/README.md) | Lightweight spec-first workflow; draft acceptance criteria |
 | [Azure access](docs/azure-access.md) | Identity, approval, deployment and cleanup plan |
 | [Research](docs/research.md) | Primary sources and dated findings |
 | [Contributing](CONTRIBUTING.md) | Team workflow and public-release checklist |
@@ -76,3 +77,8 @@ No Azure credentials or catalog downloads are needed.
 The original concept also envisaged service/tariff coding, Azure Functions,
 SQL Ledger, Semantic Kernel, and jurisdiction-specific rules. Those remain
 possible extensions; they are not all required services for the three-day MVP.
+
+Current phase: **setup only**. Application coding is planned for September 15,
+2026 and requires an explicit start instruction. Draft specs do not authorize
+implementation. The repo includes selected, attributed Superpowers adaptations,
+not a full plugin installation; see the agent workflow above.

@@ -1,18 +1,36 @@
 # Agent-assisted development
 
-## Recommendation
+## Selected setup
 
-Start small: canonical `AGENTS.md`, Copilot instructions, and three focused
-repository skills for pack changes, CI triage and the boundary workflow.
-Use test-first implementation, small PRs, direct log retrieval and human review.
-GitHub supports project skills in `.github/skills/`; see [research](research.md).
+Use canonical `AGENTS.md`, Copilot instructions, the three domain/CI skills,
+a lightweight spec-first skill and four project-adapted Superpowers skills.
+The owner approved this setup on 2026-09-14, with application coding explicitly
+paused until a later start instruction. The planned coding date is 2026-09-15.
 
-Superpowers is a useful optional workflow library, and its upstream currently
-documents Copilot support. Do not install it wholesale for this three-day project:
-our short instructions and domain-specific skills are easier to review and less
-likely to compete with existing Azure skills. Reconsider after the demo; pin a
-reviewed revision, inspect hooks/commands and keep permissions narrow.
-This is a project recommendation, not a claim of comparative benchmark results.
+| Repo-local skill | When to use |
+| --- | --- |
+| `spec-first` | Define observable behavior, exclusions, failure cases and approval status |
+| `superpowers-writing-plans` | Break an approved spec into small implementation/test tasks |
+| `superpowers-test-driven-development` | Write a failing behavior test before authorized implementation |
+| `superpowers-systematic-debugging` | Reproduce and investigate failures before changing code |
+| `superpowers-verification-before-completion` | Collect evidence for the exact completion claim |
+
+The four adapted skills are based on a fixed Superpowers commit, not a moving
+marketplace installation. Attribution, license, reviewed source paths and changes
+are recorded in [the provenance record](../third_party/superpowers/README.md).
+No global/user-level installation, session hooks, telemetry, automatic updates,
+additional MCP servers or subagent orchestrator are enabled.
+
+We intentionally adapted rather than copied the full upstream workflows:
+boundary diagnostics must never dump patient content/secrets; TDD must not delete
+existing work; planning must not automatically dispatch agents or begin execution.
+Our short feature specs replace the need for a second full workflow framework.
+**Spec Kit is not installed.** This is lightweight spec-driven development, not a
+claim to implement Spec Kit's tooling or generated commands.
+
+Read [the specification workflow](../specs/README.md). Three draft feature specs
+are ready for discussion, not implementation approval. Existing architecture and
+catalog docs remain authoritative for project-wide constraints.
 
 ## What is configured
 
@@ -21,6 +39,24 @@ This is a project recommendation, not a claim of comparative benchmark results.
 - Copilot cloud-agent setup workflow prepares Python and runs the same checks.
 - Dependabot monitors GitHub Actions references.
 - PR template records boundary changes, catalog sources and verification.
+- Versioned adapted SDLC skills, provenance and a spec template.
+
+## Skill discovery and team onboarding
+
+These skills are plain repository files under `.github/skills/`, available with
+a normal clone; there is no separate dependency installation. Start a fresh
+Copilot session on this branch (or on main after the setup PR is merged) and
+check `/skills` and `/instructions`. Existing sessions may retain their original
+skill list. Do not claim a skill was invoked merely because its file exists.
+
+If the client does not discover repository skills, read the named `SKILL.md`
+directly through its file tools and follow it as project guidance; report the
+discovery limitation. Do not invent plugin-prefixed commands. Azure MCP and
+browser availability are configured separately and are not changed by these files.
+
+The setup PR is reviewed and merged by the owner; agents must not auto-merge it.
+The setup files do not modify account-wide Copilot configuration or install
+anything for other users of this machine.
 
 ## Tool access and separation
 
