@@ -50,7 +50,7 @@ CPT/HCPCS Level I, TARDOC, outpatient flat rates, SwissDRG grouping, tariff
 calculations, payer rules and automated claims are outside the MVP.
 CHOP, ICD-10-PCS and HCPCS Level II are future adapters, not current dependencies.
 
-Before public release, review code licensing separately from data, model weights,
+Before an accelerator release, review code licensing separately from data, model weights,
 SDKs and trademarks. This repo currently grants **no open-source license**;
-select one with the owner before making it public. No license is inferred from
+select one with the owner before distributing a licensed release. No license is inferred from
 the goal of eventually becoming a solution accelerator.

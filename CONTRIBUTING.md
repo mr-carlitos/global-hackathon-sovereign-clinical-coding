@@ -1,7 +1,7 @@
 # Contributing
 
-This repository is private during the hackathon. It is intended for later public
-release, but no open-source license has been selected yet.
+This repository is public as of 2026-09-14 at the owner's request.
+No open-source license has been selected yet.
 
 Read `AGENTS.md`, `docs/plan.md`, and the privacy/catalog policies before work.
 Carlos coordinates Azure and integration; the software engineer and solution-sales
@@ -20,9 +20,9 @@ No real clinical records, copied proprietary catalog content, credentials or
 developer-specific tenant configuration. Preserve original source attribution.
 Do not auto-merge someone else's changes or force-push shared branches.
 
-## Public-release checklist
+## Accelerator release-readiness checklist
 
-- Owner approves visibility and a source-code license.
+- Public visibility is approved; owner still needs to select a source-code license.
 - Contributors confirm rights to their contributions; dependency/model licenses
   and third-party notices are reviewed.
 - Audit Git history, fixtures, artifacts, images and screenshots for secrets,

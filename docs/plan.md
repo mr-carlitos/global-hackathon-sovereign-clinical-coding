@@ -9,7 +9,8 @@ with coding agents supporting bounded implementation and investigation.
 Lead: Carlos on Azure/runtime; engineer on local pipeline; sales on narrative and
 synthetic scenarios. Agents prepare contracts, tests and repeatable commands.
 
-1. Bootstrap private GitHub repository, instructions, CI, design and pack contracts.
+1. Bootstrap GitHub repository, instructions, CI, design and pack contracts.
+   Initially private; made public on 2026-09-14 at the owner's request.
 2. Confirm deployment subscription, region, VM/runtime support and modest cost
    estimate. Create only the approved demo resources; one hospital VM preferred.
 3. Timebox Foundry Local installation and model evaluation to two hours. Test a

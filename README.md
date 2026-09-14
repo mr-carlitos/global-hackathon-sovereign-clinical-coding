@@ -3,8 +3,8 @@
 **A three-day Microsoft Global Hackathon project: local identity handling,
 policy-controlled Azure inference, and human-reviewed diagnosis-code proposals.**
 
-Private incubation repository owned by `mr-carlitos`. Intended to become a
-reusable solution accelerator after a public-release review. Not an official
+Public hackathon repository owned by `mr-carlitos`. Intended to become a
+reusable solution accelerator after a release-readiness review. Not an official
 Microsoft product, medical device, compliance certification, or production system.
 
 ## Status
