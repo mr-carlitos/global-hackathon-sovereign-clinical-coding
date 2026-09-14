@@ -1,5 +1,7 @@
 ## Change and linked issue
 
+Spec path / requirement IDs (or "setup-only; no application behavior change"):
+
 ## Verification
 
 Commands, results and relevant Actions run.
@@ -12,3 +14,5 @@ Use only synthetic examples. State "none" when unchanged.
 ## Limitations / review needed
 
 Distinguish implementation from planned or mocked behavior.
+Link evidence for each implemented acceptance criterion. Setup/spec approval
+does not authorize implementation, deployment or automatic merging.
